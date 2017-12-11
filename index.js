@@ -12,9 +12,9 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://heroku_98f9d6s2:Il2cbbal@ds137256.mlab.com:37256/heroku_98f9d6s2',
+  databaseURI: databaseUri || 'mongodb://heroku_98f9d6s2:okstseflobtthkq88i991rq03r@ds137256.mlab.com:37256/heroku_98f9d6s2',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'Tuur-db',
+  appId: process.env.APP_ID || 'Tuur',
   masterKey: process.env.MASTER_KEY || 'PBIl2cbbal', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
   liveQuery: {
@@ -36,7 +36,7 @@ app.use(mountPath, api);
 
 // Parse Server plays nicely with the rest of your web routes
 app.get('/', function(req, res) {
-  res.status(200).send('The server is up!');
+  res.status(200).send('I think it works now!');
 });
 
 // There will be a test page available on the /test path of your server url

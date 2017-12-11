@@ -12,7 +12,7 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
+  databaseURI: databaseUri || 'mongodb://heroku_98f9d6s2:Il2cbbal@ds137256.mlab.com:37256/heroku_98f9d6s2',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'Tuur-db',
   masterKey: process.env.MASTER_KEY || 'PBIl2cbbal', //Add your master key here. Keep it secret!
